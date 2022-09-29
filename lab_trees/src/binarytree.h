@@ -136,7 +136,7 @@ class BinaryTree
          *  criterion for a binary tree to be a binary search tree.
          */
         bool isOrderedRecursive() const;
-
+        
         /**
          *  Uses vector to store values of the nodes of a binary tree in order.
          * That is, everything to the left of a node will be pushed before that
@@ -156,6 +156,7 @@ class BinaryTree
          * Look at the private helpers for height and printLeftToRight
          *  as examples.
          */
+     
 
         /**
          * Private helper function for the public height function.
@@ -206,6 +207,8 @@ class BinaryTree
          * @param treeVector stores nodes in order
          */
         void inOrder(Node *subRoot, std::vector<T>& treeVector);
+                void swich(Node *a);
+
 };
 
 #include "binarytree_given.hpp"
